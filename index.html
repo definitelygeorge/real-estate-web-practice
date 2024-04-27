@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="header-hero-container">
+      <header>
+        <!--YOU CAN USE FLOAT LEFT OR RIGHT, TABLES, BUT FLEX BOX IS THE BEST-->
+        <div class="flex container">
+          <a href="#" id="logo">KAGESTATE</a>
+          <nav>
+            <!--HAMBURGER MENU-->
+            <button id="nav-toggle" class="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+            <ul id="nav-menu">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#">Properties</a></li>
+              <li><a href="#">Agents</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section id="hero">
+        <!--This is completely empty div for the fade style-->
+        <div class="fade"></div>
+        <!--This will hold the marketing text-->
+        <div class="hero-text">
+          <h1>Buy and sell real estates properties</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            molestiae vero facilis nesciunt repellat vitae eum eius, mollitia,
+            officia aperiam earum aliquid laudantium nihil facere rem iure
+            labore fugiat illum.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!--HOW IT WORKS SECTION-->
+    <section id="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="flex">
+          <div>
+            <span class="fas fa-home"></span>
+            <!--NOT SO SURE ABOUT THIS IF IT SHOULD BE h3-->
+            <h4>Find a Property</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, veritatis.
+            </p>
+          </div>
+          <div>
+            <span class="fas fa-dollar-sign"></span>
+            <!--NOT SO SURE ABOUT THIS IF IT SHOULD BE h3-->
+            <h4>Buy a Propery</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, veritatis.
+            </p>
+          </div>
+          <div>
+            <span class="fas fa-chart-line"></span>
+            <!--NOT SO SURE ABOUT THIS IF IT SHOULD BE h3-->
+            <h4>Investing</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, veritatis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PROPERTIES SECTION-->
+    <section id="properties">
+      <div class="container">
+        <h2>Properties</h2>
+        <!--we're gonna call this class="slick" in js later-->
+        <div id="properties-slider" class="slick">
+          <div>
+            <img src="./images/Property1.jpg" alt="Property 1" />
+            <div class="property-details">
+              <p class="price">$3,400,000</p>
+              <span class="beds">6 beds</span>
+              <span class="baths">5 baths</span>
+              <span class="sqft">4,120 sqft.</span>
+              <address>
+                123 Palm Street, Brgy. Sunflower, Makati City, Metro Manila,
+                Philippines
+              </address>
+            </div>
+          </div>
+          <div>
+            <img src="./images/Property2.jpg" alt="Property 2" />
+            <div class="property-details">
+              <p class="price">$2,800,000</p>
+              <span class="beds">4 beds</span>
+              <span class="baths">3 baths</span>
+              <span class="sqft">3,000 sqft.</span>
+              <address>
+                456 Orchid Lane, Brgy. Rosewood, Quezon City, Metro Manila,
+                Philippines
+              </address>
+            </div>
+          </div>
+          <div>
+            <img src="./images/Property3.jpg" alt="Property 3" />
+            <div class="property-details">
+              <p class="price">$1,200,000</p>
+              <span class="beds">3 beds</span>
+              <span class="baths">2 baths</span>
+              <span class="sqft">2,500 sqft.</span>
+              <address>
+                789 Lily Street, Brgy. Tulip, Pasig City, Metro Manila,
+                Philippines
+              </address>
+            </div>
+          </div>
+          <div>
+            <img src="./images/Property4.jpg" alt="Property 4" />
+            <div class="property-details">
+              <p class="price">$1,500,000</p>
+              <span class="beds">5 beds</span>
+              <span class="baths">4 baths</span>
+              <span class="sqft">3,800 sqft.</span>
+              <address>
+                101 Violet Avenue, Brgy. Daisy, Mandaluyong City, Metro Manila,
+                Philippines
+              </address>
+            </div>
+          </div>
+          <div>
+            <img src="./images/Property5.jpg" alt="Property 5" />
+            <div class="property-details">
+              <p class="price">$2,000,000</p>
+              <span class="beds">4 beds</span>
+              <span class="baths">3 baths</span>
+              <span class="sqft">3,200 sqft.</span>
+              <address>
+                222 Daisy Street, Brgy. Sunflower, Makati City, Metro Manila,
+                Philippines
+              </address>
+            </div>
+          </div>
+          <div>
+            <img src="./images/Property6.jpg" alt="Property 6" />
+            <div class="property-details">
+              <p class="price">$1,800,000</p>
+              <span class="beds">3 beds</span>
+              <span class="baths">2 baths</span>
+              <span class="sqft">2,800 sqft.</span>
+              <address>
+                333 Tulip Road, Brgy. Orchid, Taguig City, Metro Manila,
+                Philippines
+              </address>
+            </div>
+          </div>
+        </div>
+        <button class="rounded">View All Property Listings</button>
+      </div>
+    </section>
+
+    <!--AGENTS SECTIONS-->
+    <section id="agents">
+      <div class="container">
+        <h2>Agents</h2>
+        <p class="large-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          voluptates.
+        </p>
+        <div class="flex">
+          <div class="card">
+            <img src="./images/Realtor.jpg" alt="Realtor 1" />
+            <h3>George Donayre</h3>
+            <p>Real Estate Agent</p>
+          </div>
+          <div class="card">
+            <img src="./images/Realtor.jpg" alt="Realtor 1" />
+            <h3>George Donayre</h3>
+            <p>Real Estate Agent</p>
+          </div>
+          <div class="card">
+            <img src="./images/Realtor.jpg" alt="Realtor 1" />
+            <h3>George Donayre</h3>
+            <p>Real Estate Agent</p>
+          </div>
+          <div class="card">
+            <img src="./images/Realtor.jpg" alt="Realtor 1" />
+            <h3>George Donayre</h3>
+            <p>Real Estate Agent</p>
+          </div>
+          <div class="card">
+            <img src="./images/Realtor.jpg" alt="Realtor 1" />
+            <h3>George Donayre</h3>
+            <p>Real Estate Agent</p>
+          </div>
+          <div class="card">
+            <img src="./images/Realtor.jpg" alt="Realtor 1" />
+            <h3>George Donayre</h3>
+            <p>Real Estate Agent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PARANG SUB SECTION OR SMT LIKE A MARKETING STRATEGY-->
+    <section id="the-best">
+      <div class="flex container">
+        <img src="./images/Property4.jpg" alt="Sample property" />
+        <div>
+          <h2>We Are The Best Real Estate Company</h2>
+          <p class="large-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            laudantium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui
+            doloribus tenetur facilis corporis voluptas!
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <button class="rounded">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES SECTION-->
+    <section id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="flex">
+          <div>
+            <div class="fas fa-home"></div>
+            <div class="services-card-right">
+              <h3>Search Property</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                commodi quod mollitia?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div>
+            <div class="fas fa-dollar-sign"></div>
+            <div class="services-card-right">
+              <h3>Buy Property</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                commodi quod mollitia?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div>
+            <div class="fas fa-chart-line"></div>
+            <div class="services-card-right">
+              <h3>Investing</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                commodi quod mollitia?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div>
+            <div class="fas fa-building"></div>
+            <div class="services-card-right">
+              <h3>List Property</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                commodi quod mollitia?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div>
+            <div class="fas fa-search"></div>
+            <div class="services-card-right">
+              <h3>Property Locator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                commodi quod mollitia?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+          <div>
+            <div class="fas fa-mobile-alt"></div>
+            <div class="services-card-right">
+              <h3>Stated Apps</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                commodi quod mollitia?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--TESTIMONIAL SECTION-->
+    <section id="testimonials">
+      <div class="container">
+        <h2>What Our Clients Are Saying</h2>
+        <div id="testimonials-slider">
+          <div>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                porro, nemo, praesentium, recusandae labore quae perspiciatis
+                accusantium ad nobis amet eos sapiente voluptatibus reiciendis
+                corporis.
+              </p>
+            </blockquote>
+            <div class="testimonials caption">
+              <img src="./images/Realtor.jpg" alt="Client 1" width="40px" />
+              <p>George Donayre</p>
+            </div>
+          </div>
+          <div>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                porro, nemo, praesentium, recusandae labore quae perspiciatis
+                accusantium ad nobis amet eos sapiente voluptatibus reiciendis
+                corporis.
+              </p>
+            </blockquote>
+            <div class="testimonials caption">
+              <img src="./images/Realtor.jpg" alt="Client 1" width="40px" />
+              <p>George Donayre</p>
+            </div>
+          </div>
+          <div>
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                porro, nemo, praesentium, recusandae labore quae perspiciatis
+                accusantium ad nobis amet eos sapiente voluptatibus reiciendis
+                corporis.
+              </p>
+            </blockquote>
+            <div class="testimonials caption">
+              <img src="./images/Realtor.jpg" alt="Client 1" width="40px" />
+              <p>George Donayre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT SECTION-->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <!--flex box is good to use when you have two or more items inside a section-->
+        <div class="flex">
+          <div id="form-container">
+            <h3>Contact Form</h3>
+            <form action="">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+
+              <label for="email">Email</label>
+              <input type="text" id="email" />
+
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" />
+
+              <label for="message"></label>
+              <textarea name="" id="message" cols="30" rows="10">
+Write your message here...</textarea
+              >
+              <button class="rounded">Send Message</button>
+            </form>
+          </div>
+          <div id="address">
+            <label>Address</label>
+            <address>
+              42 Sunflower Avenue, Barangay Roseville, Makati City, Metro
+              Manila, Philippines
+            </address>
+
+            <label>Phone</label>
+            <a href="#">(02) 1234-5678</a>
+
+            <label>Email</label>
+            <a href="mailto:georgeallen.donayre.personal.16@gmail.com"
+              >kaestate@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--YEY WE'RE ON THE FOOTER-->
+    <footer>
+      <div class="flex container">
+        <div class="footer-about">
+          <h5>About Kaestate</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ex,
+            enim a eaque iure tempore nisi et necessitatibus qui quam! Mollitia,
+            expedita!
+          </p>
+        </div>
+
+        <div class="footer-quick-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <h5>Subscribe in our Newsletter</h5>
+          <div id="subscribe-container"></div>
+          <input type="text" placeholder="Enter Email" />
+          <button class="right-rounded">Send</button>
+
+          <h5 class="follow-us">Follow Us</h5>
+          <ul>
+            <li>
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <small
+        >Copyright &copy; 2024 All rights reserved | I used this for honing my
+        skills, all credits goes to
+        <a href="https://colorlib.com">Colorlib</a></small
+      >
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/34c7355fdd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

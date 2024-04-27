@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*we start global styles*/
+body {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.7;
+}
+
+* {
+  outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+  /*for the transition to apply in every except the mentioned above*/
+  transition: 0.4s;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", "serif";
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #f69314;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: "Playfair Display", "serif";
+}
+
+p {
+  margin: 0 0 1rem; /*top-bottom, left-right, */
+}
+
+button.rounded {
+  background: #f69314;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px; /*vertical horizontal*/
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.large-paragraph {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+/* we end global styles*/
+
+/*we start header styles*/
+#header-hero-container {
+  min-height: 600px;
+  height: calc(100vh);
+  position: relative;
+}
+
+header {
+  background: transparent;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed; /*so it stays when we scroll*/
+  width: 100%;
+  z-index: 3; /*so it stays on top of other elements when we scroll*/
+}
+
+#logo {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none; /*only shows up when we are on smaller screen*/
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#close-flyout {
+  display: none;
+}
+
+header ul li a {
+  color: #999;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header ul.is-sticky li a {
+  color: #000;
+}
+
+header ul li a:hover,
+header ul li a:active {
+  color: #fff;
+}
+
+header ul.is-sticky li:hover,
+header ul.is-sticky li:active {
+  color: #f69314;
+}
+/*we end header styles*/
+
+/*we start hero section styles*/
+#hero {
+  background: url("https://glam4good.com/wp-content/uploads/2015/11/image2-2.jpeg")
+    center center no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero .fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(52, 58, 64, 0.7);
+  z-index: 1;
+}
+
+#hero .hero-text {
+  position: absolute;
+  top: 50%;
+  margin: -75px auto 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  z-index: 2;
+  width: 500px;
+  text-align: center;
+}
+
+#hero .hero-text p {
+  line-height: 1.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/*we end hero section styles*/
+/*we start how it works styles*/
+#how-it-works {
+  padding: 3rem 0;
+  text-align: center;
+  background: #f9f8f8;
+}
+
+#how-it-works h2 {
+  /*use the section id not the container bruh*/
+  margin-bottom: 3rem;
+}
+
+#how-it-works .flex > div {
+  /*> this means the immediate children inside a parent so it means all the div class inside that .flex*/
+  width: 30%;
+}
+
+#how-it-works h4 {
+  color: #343a40;
+  margin-top: 1rem;
+}
+#how-it-works span {
+  color: #f69314;
+  font-size: 35px;
+}
+
+/*we end how-it-works section styles*/
+
+/*we start properties section styles*/
+
+#properties {
+  margin: 4rem 0 8rem;
+  position: relative;
+}
+
+#properties h2 {
+  margin-bottom: 3rem;
+}
+
+#properties .container {
+  position: relative;
+}
+
+#properties .container:before {
+  content: "/";
+  position: absolute;
+  right: 55px;
+  top: 18px;
+  color: #999;
+}
+
+#properties-slider a.slick-arrow {
+  color: #000;
+  position: absolute;
+  top: -78px;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#properties-slider a.slick-prev {
+  right: 70px;
+}
+
+#properties-slider .slick-slide {
+  padding: 0 15px;
+}
+
+#properties-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Set minimum width and height to maintain consistency */
+  min-width: 200px;
+  min-height: 380px;
+  display: block;
+}
+
+#properties-slider .property-details {
+  padding: 1rem;
+}
+
+#properties-slider .price {
+  font-size: 1.2rem;
+  color: #343a40;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+#properties-slider .property-details span {
+  font-size: 0.8rem;
+  padding-right: 15px;
+}
+
+#properties-slider .property-details span.baths {
+  padding-left: 10px;
+}
+
+#properties-slider .property-details span.sqft {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+#properties-slider .property-details span.beds,
+#properties-slider .property-details span.baths {
+  border-right: 1px solid #888;
+}
+
+#properties-slider .property-details address {
+  font-size: 0.8rem;
+  font-style: normal;
+  margin-top: 0.5rem;
+}
+
+#properties button.rounded {
+  display: block;
+  margin: 2rem auto 0;
+  width: 350px;
+}
+
+/*we end properties section styles*/
+
+/*we start agents section styles*/
+#agents {
+  margin: 4rem 0 6rem;
+  padding: 0 0 6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#agents p.large-paragraph {
+  width: 50%;
+  border-bottom: 4rem;
+}
+
+#agents .flex {
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#agents .card {
+  width: 32%;
+  background: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+#agents img {
+  width: 100%; /*GANTO LANG PALA POTA*/
+}
+
+#agents .card h3 {
+  font-family: "Playfair Display", "serif";
+  color: #000;
+}
+
+#agents .card h3,
+#agents .card p {
+  padding-left: 1rem;
+}
+
+/*we end agents section styles*/
+
+/*we start the best company section styles*/
+#the-best {
+  margin: 4rem 0;
+}
+
+#the-best .flex > img {
+  width: 47%;
+}
+
+#the-best .flex > div {
+  width: 40%;
+}
+
+#the-best ul {
+  padding-left: 20px;
+  margin-bottom: 4rem;
+}
+
+#the-best ul li {
+  margin: 10px 0;
+}
+/*we end the best company section styles*/
+
+/*we start services section styles*/
+
+#services {
+  background: #f8f9fa;
+  padding: 6rem 0;
+  margin: 8rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#services .flex {
+  flex-wrap: wrap;
+}
+
+#services .flex > div {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+#services .flex > div .fas {
+  color: #f69314;
+  text-align: center;
+  float: left;
+  margin-top: 15px;
+  width: 20%;
+  font-size: 40px;
+}
+
+#services .flex > div .services-card-right {
+  float: right;
+  width: 75%; /*ah kaya di maka float kasi sobrang laki*/
+}
+#services .flex a {
+  text-decoration: none;
+  color: #f69314;
+  font-size: 1rem;
+}
+
+#services .flex a:hover {
+  text-decoration: underline;
+}
+
+#services .flex h3 {
+  font-weight: 400;
+}
+/*we end services section styles*/
