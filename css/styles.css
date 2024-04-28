@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/*we start global styles*/
+/*START: GLOBAL STYLES*/
+
 body {
   font-family: "Roboto", "Helvetica", "Sans-serif";
   margin: 0;
@@ -21,8 +22,9 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .flex {
@@ -92,9 +94,11 @@ button.rounded {
   font-size: 1.25rem;
   font-weight: 300;
 }
-/* we end global styles*/
 
-/*we start header styles*/
+/*END: GLOBAL STYLES*/
+
+/*START: HEADER STYLES*/
+
 #header-hero-container {
   min-height: 600px;
   height: calc(100vh);
@@ -169,9 +173,11 @@ header ul.is-sticky li:hover,
 header ul.is-sticky li:active {
   color: #f69314;
 }
-/*we end header styles*/
 
-/*we start hero section styles*/
+/*END: HEADER STYLES*/
+
+/*START: HERO SECTION*/
+
 #hero {
   background: url("https://glam4good.com/wp-content/uploads/2015/11/image2-2.jpeg")
     center center no-repeat;
@@ -211,8 +217,10 @@ header ul.is-sticky li:active {
   font-size: 1rem;
 }
 
-/*we end hero section styles*/
-/*we start how it works styles*/
+/*END: HERO SECTION*/
+
+/*START: HOW IT WORKS SECTION*/
+
 #how-it-works {
   padding: 3rem 0;
   text-align: center;
@@ -238,9 +246,9 @@ header ul.is-sticky li:active {
   font-size: 35px;
 }
 
-/*we end how-it-works section styles*/
+/*END: HOW IT WORKS SECTION*/
 
-/*we start properties section styles*/
+/*START: PROPERTIES SECTION*/
 
 #properties {
   margin: 4rem 0 8rem;
@@ -334,9 +342,10 @@ header ul.is-sticky li:active {
   width: 350px;
 }
 
-/*we end properties section styles*/
+/*END: PROPERTIES SECTION*/
 
-/*we start agents section styles*/
+/*START: AGENTS SECTION*/
+
 #agents {
   margin: 4rem 0 6rem;
   padding: 0 0 6rem;
@@ -373,9 +382,10 @@ header ul.is-sticky li:active {
   padding-left: 1rem;
 }
 
-/*we end agents section styles*/
+/*END: AGENTS SECTION*/
 
-/*we start the best company section styles*/
+/*START: THE BEST SECTION*/
+
 #the-best {
   margin: 4rem 0;
 }
@@ -396,9 +406,10 @@ header ul.is-sticky li:active {
 #the-best ul li {
   margin: 10px 0;
 }
-/*we end the best company section styles*/
 
-/*we start services section styles*/
+/*END: THE BEST SECTION*/
+
+/*START: SERVICES SECTION*/
 
 #services {
   background: #f8f9fa;
@@ -447,4 +458,536 @@ header ul.is-sticky li:active {
 #services .flex h3 {
   font-weight: 400;
 }
-/*we end services section styles*/
+
+/*END: SERVICES SECTION*/
+
+/*START: TESTIMONIALS SECTION*/
+
+#testimonials {
+  margin-bottom: 8rem;
+}
+
+#testimonials h2 {
+  text-align: center;
+}
+
+#testimonials-slider .slick-slide {
+  text-align: center;
+}
+
+#testimonials-slider blockquote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1rem auto 3rem;
+  max-width: 740px;
+}
+
+#testimonials-slider .testimonials-caption {
+  width: 200px;
+
+  margin: 0 auto; /*commonly used to center this kind of elements horizontally WTF BRO*/
+}
+
+#testimonials-slider .testimonials-caption img {
+  width: 60px;
+  border-radius: 50%;
+  float: left;
+}
+
+#testimonials-slider .testimonials-caption p {
+  font-size: 1.2rem;
+  position: relative;
+  top: 13px;
+  left: 7px;
+}
+
+#testimonials-slider .slick-arrow {
+  position: absolute;
+  text-decoration: none;
+  font-size: 40px;
+  color: #222;
+  top: 50%; /*this shit centers it vertically oh my fucking god, basta ang position ay absolute*/
+  margin-top: -40px;
+  z-index: 1;
+}
+
+#testimonials-slider a.slick-next {
+  right: 0;
+}
+
+/*END: TESTIMONIALS SECTION*/
+
+/*START: CONTACT US SECTION*/
+
+#contact {
+  background: #f8f9fa;
+  padding: 4rem 0 8rem;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#form-container {
+  background-color: #fff;
+  padding: 3rem;
+  box-sizing: border-box; /*includes border and padding sa total height and width*/
+  width: 58%;
+}
+
+#form-container h3 {
+  font-family: "Playfair Display", "serif";
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+#form-container label {
+  display: block;
+  color: #000;
+  margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea {
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1rem;
+  color: #495057;
+}
+
+#form-container textarea {
+  margin-bottom: 2rem;
+  resize: none;
+  height: 170px;
+}
+
+#form-container .rounded {
+  margin-bottom: 1.5rem;
+}
+
+#address {
+  width: 38%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  height: 300px;
+}
+
+#address label {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1rem;
+  color: #495057;
+  display: block;
+  margin-top: 2rem;
+  font-weight: 700;
+}
+
+#address label:first-child {
+  margin-top: 0;
+}
+
+#address address {
+  margin-bottom: 1.5rem;
+  font-style: normal;
+}
+
+#address a {
+  text-decoration: none;
+  color: #f69314;
+}
+
+#address a:hover {
+  text-decoration: underline;
+}
+
+/*END: CONTACT US SECTION*/
+
+/*START: FOOTER SECTION*/
+footer {
+  background: #333;
+  padding: 8rem 0;
+}
+
+footer .flex {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #777;
+  padding-left: 1rem;
+  padding-right: 4rem;
+}
+
+footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+footer h5.follow-us {
+  margin-top: 1rem;
+}
+
+footer .footer-about {
+  width: 47%;
+}
+
+footer .footer-about p {
+  width: 65%;
+}
+
+footer .footer-quick-links {
+  width: 16%;
+}
+
+footer .footer-quick-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-quick-links li {
+  margin: 10px 0;
+}
+
+footer .footer-quick-links li a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer .footer-quick-links li a:hover {
+  color: #fff;
+}
+
+footer .footer-subscribe {
+  width: 35%;
+}
+
+#subscribe-container {
+  position: relative;
+}
+
+footer .footer-subscribe input {
+  border-radius: 30px;
+  padding: 10px;
+  height: 43px;
+  width: 80%;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1rem;
+  background-color: transparent; /*this is pretty useful*/
+  color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #6c757d;
+}
+
+footer button.right-rounded {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px 30px 9px;
+  background: #f69314;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 10%; /*NAKAKA PROUD HASHAHSHAHA*/
+}
+
+footer button.right-rounded:hover {
+  background-color: #fff;
+}
+
+footer .footer-subscribe ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-subscribe ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+  margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+  color: #fff;
+}
+
+footer small {
+  margin-top: 3rem;
+  display: block; /*not sure about what happened here*/
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer small a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer small a:hover {
+  color: #fff;
+}
+
+/*END: FOOTER SECTION*/
+
+/*START: MEDIA QUERIES*/
+@media (max-width: 991px) {
+  #logo {
+    top: 1px;
+  }
+
+  #nav-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    top: 0;
+    margin: 0;
+    padding: 2rem;
+    height: 100%;
+    width: 300px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 10px 3px #999;
+  }
+
+  #close-flyout {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    font-size: 30px;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  nav ul li:first-child {
+    margin-top: 50px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #212529;
+  }
+
+  nav ul li a.active,
+  nav ul li a:hover {
+    color: #f69314;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .large-paragraph {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+
+  #hero .hero-text {
+    width: 400px;
+  }
+
+  #agents .card {
+    width: 49%;
+  }
+
+  #the-best .flex > img {
+    display: none;
+  }
+
+  #the-best .flex > div {
+    width: 100%;
+  }
+
+  #testimonials-slider p {
+    font-size: 1.2rem;
+  }
+
+  #properties .container:before {
+    top: 2px;
+    font-size: 0.85rem;
+  }
+
+  #properties-slider a.slick-arrow {
+    font-size: 0.85rem;
+  }
+
+  #properties button.rounded {
+    width: 300px;
+  }
+
+  #services .flex > div {
+    width: 48%;
+  }
+
+  #contact .flex {
+    flex-wrap: wrap;
+  }
+
+  #form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  #address-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  footer {
+    padding: 6rem 0;
+  }
+
+  footer .flex {
+    flex-wrap: wrap;
+  }
+
+  footer .flex > div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  footer .flex > div:first-child {
+    margin-top: 0;
+  }
+
+  footer .footer-about p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  footer .footer-subscribe input {
+    width: 90%;
+  }
+
+  footer h5.follow-us {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #hero .hero-text {
+    width: 330px;
+  }
+
+  #agents {
+    margin: 4rem 0 3rem;
+    padding: 0 0 3rem;
+  }
+
+  #agents .card {
+    width: 100%;
+  }
+
+  #agents p.large-paragraph {
+    width: 100%;
+  }
+
+  #how-it-works .flex {
+    display: block;
+  }
+
+  #how-it-works .flex > div {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  #properties button.rounded {
+    width: 250px;
+  }
+
+  #services {
+    padding: 4rem 0 3rem;
+    margin: 4rem 0;
+  }
+
+  #services .flex > div {
+    width: 100%;
+  }
+
+  #testimonials {
+    margin-bottom: 4rem;
+  }
+
+  #testimonials-slider p {
+    font-size: 1rem;
+  }
+
+  #testimonials-slider .slick-arrow {
+    display: none !important;
+  }
+
+  #contact {
+    padding: 4rem 0;
+  }
+
+  #contact h2 {
+    margin-bottom: 2rem;
+  }
+
+  #form-container {
+    padding: 1.5rem;
+  }
+
+  footer {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero .hero-text {
+    max-width: 275px;
+    width: 100%;
+  }
+
+  #properties button.rounded {
+    max-width: 250px;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 200px;
+  }
+}
+/*END: MEDIA QUERIES*/
